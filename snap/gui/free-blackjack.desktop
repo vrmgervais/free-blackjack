@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Free Blackjack
+Comment=A fun open-source Blackjack game made in Godot
+Exec=free-blackjack
+Icon=${SNAP}/meta/gui/free-blackjack.png
+Type=Application
+Categories=Game;
+Terminal=false
+StartupNotify=true

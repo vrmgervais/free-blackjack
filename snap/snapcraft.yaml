@@ -1,0 +1,42 @@
+name: free-blackjack
+base: core24
+version: '1.0.0'
+summary: Free simple Blackjack game
+description: |
+  A free and open-source Blackjack game made with AI in Godot as I could not find a Blackjack game in Ubuntu app store.
+
+  Source code: https://github.com/vrmgervais/free-blackjack
+
+title: Free Blackjack
+license: MIT
+website: https://github.com/vrmgervais/free-blackjack
+source-code: https://github.com/vrmgervais/free-blackjack
+
+grade: stable
+confinement: strict
+
+apps:
+  free-blackjack:
+    command: Blackjack.x86_64
+    plugs:
+      - opengl
+      - x11
+      - wayland
+      - audio-playback
+      - joystick
+      - desktop
+      - desktop-legacy
+      - home
+
+parts:
+  game:
+    plugin: dump
+    source: local
+    stage-packages:
+      - libgl1
+      - libx11-6
+      - libxcursor1
+      - libxinerama1
+      - libxrandr2
+      - libxi6
+      - libasound2t64

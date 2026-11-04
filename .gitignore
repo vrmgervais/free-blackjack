@@ -1,0 +1,17 @@
+# Godot 4+ cache (do not upload)
+.godot/
+
+# Other generated / temporary files
+*.translation
+export.cfg
+*.tmp
+
+# Build outputs (you already have the snap separately)
+*.x86_64
+*.pck
+*.snap
+*.zip
+
+# OS junk
+.DS_Store
+Thumbs.db
